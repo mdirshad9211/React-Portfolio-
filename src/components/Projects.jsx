@@ -1,5 +1,6 @@
-import razorpay from "../assets/razorpay.png"
-import passwordGenerator from "../assets/password generator.png"
+import razorpay from "../assets/razorpay.png";
+import passwordGenerator from "../assets/password generator.png";
+import weatherApplication from "../assets/weather application.png";
 
 function Portfolio() {
   const cardItem = [
@@ -18,6 +19,14 @@ function Portfolio() {
       description: "A Password Generator for your security",
       link: "https://mdirshad9211.github.io/password-Generator/",
       source:"https://github.com/mdirshad9211/password-Generator"
+    },
+    {
+      id: 3,
+      logo: weatherApplication,
+      name: "Weather Application",
+      description: "A Weather Application to know weather in your area and other cities also.",
+      link: "https://mdirshad9211.github.io/weather-Application/",
+      source:"https://github.com/mdirshad9211/weather-Application",
     }
   ];
 
