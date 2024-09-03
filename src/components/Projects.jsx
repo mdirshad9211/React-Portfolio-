@@ -1,14 +1,23 @@
-import { Link } from 'react-router-dom';
-import news from "../assets/Perfect News.png";
+import razorpay from "../assets/razorpay.png"
+import passwordGenerator from "../assets/password generator.png"
 
 function Portfolio() {
   const cardItem = [
     {
       id: 1,
-      logo: news,
-      name: "Perfect News",
-      description: "A News Website using React JS and news API",
-      
+      logo: razorpay,
+      name: "Razorpay Clone",
+      description: " Razor pay clone using HTMl and tailwind CSS",
+      link: "https://razorpayclone-mdirshad.netlify.app/",
+      source: "https://github.com/mdirshad9211/Razorpay-Clone-Md-Irshad"
+    },
+    {
+      id: 2,
+      logo: passwordGenerator,
+      name: "Password Generator",
+      description: "A Password Generator for your security",
+      link: "https://mdirshad9211.github.io/password-Generator/",
+      source:"https://github.com/mdirshad9211/password-Generator"
     }
   ];
 
@@ -38,12 +47,12 @@ function Portfolio() {
                 </p>
               </div>
               <div className="px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
+                <a href={item.link} className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
+                Visit
+                </a>
+                <a href={item.source} className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
                   Source Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

@@ -1,10 +1,11 @@
 
 import pic from "../assets/photo.jpg"
 
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
-import { FaTelegram } from "react-icons/fa6";
+import {
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
@@ -37,7 +38,7 @@ function Home() {
             <br />
             <p className="text-sm md:text-md text-justify">
               I am a final Year Undergraduate Student who knows C++, Python, 
-              HTML5,CSS3, JavaScript, React JS, Node JS, MongoDB, Express JS.
+              HTML5, CSS3, JavaScript, React JS, Node JS, MongoDB, Express JS.
             </p>
             <br />
             {/* social media icons */}
@@ -46,25 +47,16 @@ function Home() {
                 <h1 className="font-bold text-center ">Available on</h1>
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <FaSquareFacebook className="text-2xl cursor-pointer" />
-                    </a>
+                  <a href="https://x.com/Irshad45884161"><FaTwitter size={24} /></a>
+
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <FaLinkedin className="text-2xl cursor-pointer" />
-                    </a>
+                  <a href="https://www.linkedin.com/in/itsmdirshad/"><FaLinkedinIn size={24} /></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/" target="_blank">
-                      <IoLogoYoutube className="text-2xl cursor-pointer" />
-                    </a>
+                  <a href="https://www.instagram.com/mdirshad_1248/"><FaInstagram size={24} /></a>
                   </li>
-                  <li>
-                    <a href="https://t.me/" target="_blank">
-                      <FaTelegram className="text-2xl cursor-pointer" />
-                    </a>
-                  </li>
+                  
                 </ul>
               </div>
               <div className=" space-y-2">
